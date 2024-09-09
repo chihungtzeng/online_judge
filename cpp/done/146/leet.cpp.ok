@@ -1,0 +1,55 @@
+#include <glog/logging.h>
+#include <glog/stl_logging.h>
+
+#include <algorithm>
+#include <climits>
+#include <cstdint>
+#include <iostream>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <queue>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
+using namespace std;
+
+using ipair = pair<int, int>;
+class LRUCache {
+ public:
+  unordered_map<int, list<ipair>::iterator> cache_;
+  const int cap_;
+  list<ipair> objs_;
+  LRUCache(int capacity) : cap_(capacity) {}
+
+  int get(int key) {
+    // LOG(INFO) << "before get:" << objs_;
+    auto it = cache_.find(key);
+    if (it == cache_.end()) return -1;
+
+    auto ret = it->second->second;
+    objs_.erase(it->second);
+    objs_.insert(objs_.begin(), {key, ret});
+    it->second = objs_.begin();
+
+    return ret;
+  }
+
+  void put(int key, int value) {
+    // LOG(INFO) << "before put:" << objs_;
+
+    auto it = cache_.find(key);
+    if (it != cache_.end()) {
+      objs_.erase(it->second);
+      cache_.erase(it);
+    }
+    if (objs_.size() == cap_) {
+      auto [k, _] = objs_.back();
+      auto it = cache_.find(k);
+      objs_.erase(it->second);
+      cache_.erase(it);
+    }
+    objs_.insert(objs_.begin(), {key, value});
+    cache_[key] = objs_.begin();
+  }
+};

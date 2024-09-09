@@ -1,0 +1,39 @@
+#include <glog/logging.h>
+#include <glog/stl_logging.h>
+
+#include <algorithm>
+#include <climits>
+#include <cstdint>
+#include <iostream>
+#include <map>
+#include <numeric>
+#include <queue>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
+using namespace std;
+
+class Solution {
+ public:
+  vector<int> nextGreaterElements(vector<int>& nums) {
+    nums.reserve(nums.size() * 2);
+    int k = nums.size();
+    for (int i = 0; i < k; i++) {
+      nums.push_back(nums[i]);
+    }
+    vector<int> gt(nums.size());
+    vector<int> stack;
+    for (int i = nums.size() - 1; i >= 0; i--) {
+      while (!stack.empty() && stack.back() <= nums[i]) {
+        stack.pop_back();
+      }
+      if (stack.empty()) {
+        gt[i] = -1;
+      } else {
+        gt[i] = stack.back();
+      }
+      stack.push_back(nums[i]);
+    }
+    return vector<int>{gt.begin(), gt.begin() + gt.size() / 2};
+  }
+};
