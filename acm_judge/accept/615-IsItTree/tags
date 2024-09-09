@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+DEBUG	615.c	5;"	d	file:
+Node	615.c	/^struct Node {$/;"	s	file:
+bIsTree	615.c	/^int nNode, nInDegreeOne, bIsTree;$/;"	v
+compareNode	615.c	/^int compareNode(const void *a, const void *b){$/;"	f
+id	615.c	/^    int id;$/;"	m	struct:Node	file:
+inDegree	615.c	/^    int inDegree;$/;"	m	struct:Node	file:
+insertEdge	615.c	/^void insertEdge(void **ppRoot, int id[2]){$/;"	f
+isTree	615.c	/^int isTree(void *pRoot){$/;"	f
+main	615.c	/^int main(){$/;"	f
+nInDegreeOne	615.c	/^int nNode, nInDegreeOne, bIsTree;$/;"	v
+nNode	615.c	/^int nNode, nInDegreeOne, bIsTree;$/;"	v
+newNode	615.c	/^struct Node *newNode(int id){$/;"	f
+twalkAction	615.c	/^void twalkAction(const void *rootp, const VISIT way, const int depth){$/;"	f

@@ -1,0 +1,12 @@
+1 portugal
+2 espanha
+3 grecia
+4 russia
+
+1 portugal
+2 grecia
+3 russia
+4 espanha
+
+1 brasil
+1 franca

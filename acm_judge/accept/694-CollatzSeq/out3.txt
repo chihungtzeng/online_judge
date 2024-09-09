@@ -1,0 +1,8 @@
+Case 1: A = 1, limit = 1, number of terms = 1
+Case 2: A = 2147483647, limit = 1, number of terms = 1
+Case 3: A = 1, limit = 2147483647, number of terms = 1
+Case 4: A = 2, limit = 2147483647, number of terms = 2
+Case 5: A = 2147483647, limit = 2, number of terms = 1
+Case 6: A = 2147483647, limit = 214748364, number of terms = 1
+Case 7: A = 214748364, limit = 2147483647, number of terms = 184
+Case 8: A = 1, limit = 0, number of terms = 1

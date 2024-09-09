@@ -1,0 +1,18 @@
+Case #1: The maximum product is 2.
+
+Case #2: The maximum product is 315.
+
+Case #3: The maximum product is 1.
+
+Case #4: The maximum product is 0.
+
+Case #5: The maximum product is 54.
+
+Case #6: The maximum product is 280.
+
+Case #7: The maximum product is 0.
+
+Case #8: The maximum product is 0.
+
+Case #9: The maximum product is 0.
+

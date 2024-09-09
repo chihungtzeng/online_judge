@@ -1,0 +1,6 @@
+2E is not equal to 2 in any base 2..36
+153 is not equal to 10 in any base 2..36
+N is not equal to 1 in any base 2..36
+331 (base 6) = 87 (base 15)
+9D (base 21) = 312 (base 8)
+86 (base 25) = 5V (base 35)

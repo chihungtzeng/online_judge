@@ -1,0 +1,4 @@
+The 32nd humble number is 54.
+The 42nd humble number is 84.
+The 53rd humble number is 128.
+The 64th humble number is 189.

@@ -1,0 +1,15 @@
+Case 1: 0
+Case 2: 0
+Case 3: 0
+Case 4: 0
+Case 5: 1
+Case 6: 1
+Case 7: 2
+Case 8: 3
+Case 9: 4
+Case 10: 5
+Case 11: 37077728
+Case 12: 1634254959
+Case 13: 30670682
+Case 14: 1671911340
+Case 15: 1671916742

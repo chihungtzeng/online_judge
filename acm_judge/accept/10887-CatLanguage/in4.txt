@@ -1,0 +1,43 @@
+7
+3 2
+cat
+dog
+mouse
+rat
+bat
+1 1
+abc
+cab
+5 5
+a
+aa
+aab
+abc
+ad
+a
+ab
+b
+bc
+cd
+3 3
+a
+
+b
+a
+
+b
+0 0
+1 1
+a
+b
+10 0
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j

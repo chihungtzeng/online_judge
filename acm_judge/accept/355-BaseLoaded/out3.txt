@@ -1,0 +1,4 @@
+58 base 10 = 3A base 16
+44 base 10 = 134 base 5
+62342 base 10 = 1111001110000110 base 2
+1 base 10 = 1 base 13

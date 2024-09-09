@@ -1,0 +1,19 @@
+1
+9
+dg
+di
+dc
+df
+de
+dd
+da
+dh
+db
+7
+dg 3 da de df
+dd 2 da db
+df 1 de
+dc 1 db
+dh 5 da de dg df dc
+de 2 da dd
+di 2 df dd

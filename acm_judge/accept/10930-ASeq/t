@@ -1,0 +1,8 @@
+Case #1: 1 2 4 8 12
+This is not an A-sequence.
+Case #2: 1 5 7 9 12
+This is not an A-sequence.
+Case #3: 10 11 12 13 21
+This is not an A-sequence.
+Case #4: 1 2 4 12 8
+This is not an A-sequence.

@@ -1,0 +1,4 @@
+1 grecia
+2 brasil
+2 franca
+4 russia

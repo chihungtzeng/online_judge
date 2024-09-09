@@ -1,0 +1,349 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define LINE_LEN 1000
+#define CMD_MOVE 1
+#define CMD_PILE 2
+#define CMD_QUIT 4
+#define CMD_UNKNOWN 16
+#define TYPE_ONTO 1
+#define TYPE_OVER 2
+#define DEBUG 0
+
+struct instruction {
+	int command;
+	int type;
+	int source,target;
+};
+
+struct stack{
+	int n;
+	int element[25];
+};
+
+void push(struct stack *t,int value){
+	if (DEBUG){
+		printf("push %d to stack\n",value); 
+	}	
+	if(t->n == 25){
+		printf("stack is full\n");
+		exit(EXIT_FAILURE) ;
+	}
+	t->element[t->n]=value;
+	t->n++;
+	return ;
+}
+int pop(struct stack *s){
+	int value;
+	
+	if(s->n <= 0){
+		printf("No element can be popped\n");
+		return EXIT_FAILURE;
+	}
+	value=s->element[s->n - 1];
+	s->n--;
+	return value;
+}
+
+char *itoa(int n){
+	//convert int n into a string
+	 
+	char *out,tmp;
+	int i,r,j,len;
+	out=(char *)malloc(sizeof(char)*100);
+	i=0;
+	do{
+		r = n % 10;
+		out[i]= r +'0';
+		i++;
+		n = n/10;
+	} while (n>0);
+	out[i]='\0';
+
+	//reverse 
+	len = strlen(out);
+	j = len -1;
+	for(i=0;i<len/2;i++,j--){
+		tmp = out[i];
+		out[i] = out[j];
+		out[j] = tmp;
+	}
+	return out;
+}
+
+char *stack2string(struct stack t){
+	char *out;
+	int i;
+	out = (char *)malloc(sizeof(char)*100);
+	out[0]='\0';
+	for(i=0;i<t.n;i++){
+		strcat(out, itoa(t.element[i]));
+		strcat(out," ");
+	}
+	return out;
+}
+
+
+struct instruction parseLine(char *line){
+	struct instruction inst;
+	char *tmp;
+		
+	if (DEBUG){
+		// printf("parsing %s...\n",line);
+	}
+	if (NULL == line) return inst;
+	tmp = strtok(line," ");
+	if (!strcasecmp(tmp,"move")) {
+		inst.command = CMD_MOVE;
+	}
+	else if (!strcasecmp(tmp,"pile")){
+		inst.command = CMD_PILE;
+	}
+	else if (!strcasecmp(tmp,"quit")){
+		inst.command = CMD_QUIT;
+		return inst;
+	}
+	else {
+		printf("Unrecognized command\n");
+		inst.command = CMD_UNKNOWN;
+		return inst;
+	}
+	tmp = strtok(NULL," ");
+	inst.source = atoi(tmp);
+
+	tmp = strtok(NULL," ");
+	if(!strcasecmp(tmp,"onto")){
+		inst.type = TYPE_ONTO;
+	}
+	else if (!strcasecmp(tmp,"over")){
+		inst.type = TYPE_OVER;
+	}
+	else {
+		printf("Unrecognized type\n");
+		return inst;
+	}
+	tmp = strtok(NULL," ");
+	inst.target = atoi(tmp);
+	if (DEBUG){
+		printf("parsing %s... done!\n",line);
+	}
+	return inst;
+}
+
+void moveonto(struct stack *s, int *pos, int scr, int target){
+	int scrpos,targetpos;
+	int popout;
+	if (DEBUG){
+		printf("call function move %d onto %d \n",scr,target);
+	}
+	
+	scrpos=pos[scr];
+	targetpos=pos[target];
+	//move all blocks above source to original positions
+	popout=pop(&s[scrpos]);
+	while (popout != scr){
+		push(&s[popout],popout);
+		pos[popout]=popout;
+		popout = pop(&s[scrpos]);		
+	}	
+	push(&s[scrpos],popout);
+	
+	//move all blocks above target to original positions
+	popout=pop(&s[targetpos]);
+	while (popout != target){
+		push(&s[popout],popout);
+		pos[popout]=popout;
+		popout = pop(&s[targetpos]);		
+	}
+	push(&s[targetpos],target);
+	
+	//move scr onto target
+	popout=pop(&s[scrpos]);
+	push(&s[targetpos],popout); 
+	pos[popout]=targetpos;
+	
+	if (DEBUG){
+		printf("source stack %d: %s\n",scrpos,stack2string(s[scrpos]));
+		printf("target stack %d: %s\n",targetpos,stack2string(s[targetpos]));
+	}
+}
+
+void moveover(struct stack *s, int *pos, int scr, int target){
+	int scrpos,targetpos;
+	int popout;
+	if (DEBUG){
+		printf("call function move %d over %d \n",scr,target);
+	}
+	
+	scrpos=pos[scr];
+	targetpos=pos[target];
+	//move all blocks above source to original positions
+	popout=pop(&s[scrpos]);
+	while (popout != scr){
+		push(&s[popout],popout);
+		pos[popout]=popout;
+		popout = pop(&s[scrpos]);		
+	}	
+	//move block source to the stack containing block target
+	push(&s[targetpos],scr);
+	pos[scr]=targetpos;
+	if (DEBUG){
+		printf("source stack %d: %s\n",scrpos,stack2string(s[scrpos]));
+		printf("target stack %d: %s\n",targetpos,stack2string(s[targetpos]));
+	}
+	return ;
+}
+
+void pileonto(struct stack *s, int *pos, int scr, int target){
+	int scrpos,targetpos;
+	int popout;
+	struct stack tmpstack;
+	if (DEBUG){
+		printf("call function pile %d onto %d \n",scr,target);
+	}
+	scrpos=pos[scr];
+	targetpos=pos[target];
+	
+	//move blocks over scr to a temporary stack 
+	tmpstack.n=0;
+	popout=pop(&s[scrpos]);
+	while (popout != scr){
+		push(&tmpstack, popout);
+		popout = pop(&s[scrpos]);
+	}
+	push(&tmpstack,popout);
+	
+	//move blocks over target to orginial stacks
+	popout = pop(&s[targetpos]);
+	while(popout!=target){
+		push(&s[popout],popout);
+		pos[popout]=popout;
+		popout=pop(&s[targetpos]);
+	}
+	push(&s[targetpos],popout);
+	
+	//move elements in tmpstatck onto target 
+	
+	while(tmpstack.n >0){
+		popout=pop(&tmpstack);
+		push(&s[targetpos],popout);
+		pos[popout] = targetpos;
+	}
+	if (DEBUG){
+		printf("source stack %d: %s\n",scrpos,stack2string(s[scrpos]));
+		printf("target stack %d: %s\n",targetpos,stack2string(s[targetpos]));
+	}
+}
+
+void pileover(struct stack *s, int *pos, int scr, int target){
+	int scrpos,targetpos;
+	int popout;
+
+	
+	
+	if (DEBUG){
+		printf("call function pile %d over %d \n",scr,target);
+		//printf("stack %d: %s\n",target,stack2string(s[targetpos]));
+	}
+	scrpos=pos[scr];
+	targetpos=pos[target];
+	
+	//move blocks over scr to a temporary stack
+	struct stack tmpstack; 
+	tmpstack.n=0;
+	
+	
+	
+	
+	popout=pop(&s[scrpos]);
+	while (popout != scr){
+		push(&tmpstack, popout);
+		popout=pop(&s[scrpos]);
+	}
+	push(&tmpstack,popout);
+	
+	//move blocks in tmpstack to target stack
+	while(tmpstack.n >0){
+		popout=pop(&tmpstack);
+		push(&s[targetpos],popout);
+		pos[popout] = targetpos;
+	}
+	if (DEBUG){
+		printf("source stack %d: %s\n",scrpos,stack2string(s[scrpos]));
+		printf("target stack %d: %s\n",targetpos,stack2string(s[targetpos]));
+	}
+}
+
+int main(int argc, char *argv[]){
+	FILE *fp;
+	char line[LINE_LEN];
+	struct stack s[25];
+	struct instruction inst;
+	int pos[25]; //current positions of blocks
+	int n;
+	int i,j,k;
+	
+	/*fp = fopen("input.txt","r");*/
+	fp = stdin;
+	if(NULL == fp) {
+		printf("open file failed\n");
+		exit(EXIT_FAILURE);
+	}	
+	
+	fgets(line,LINE_LEN,fp);
+
+	n=atoi(line); //first line is n
+	//initialize stacks
+	for(i=0;i<n;i++){
+		s[i].n=0;
+		push(&s[i],i);
+		pos[i]=i;
+	} 
+	if (DEBUG){
+		printf("initialize stacks complete\n");
+	}
+
+	while(NULL != (fgets(line,LINE_LEN,fp))){
+		
+		if(DEBUG){
+			printf("command is %s\n",line);
+		}
+		inst = parseLine(line);
+		if (inst.command == CMD_UNKNOWN){
+			continue;
+		}
+		else if ((pos[inst.source] == pos[inst.target]) || (inst.source == inst.target)){
+			printf("invalid instruction\n");
+			continue;
+		}
+		else if ((inst.command == CMD_MOVE)&& (inst.type==TYPE_ONTO)){
+			moveonto(s,pos,inst.source,inst.target);
+		}
+		else if ((inst.command == CMD_MOVE)&& (inst.type==TYPE_OVER)){
+			moveover(s,pos,inst.source,inst.target);
+		}
+		else if ((inst.command == CMD_PILE)&& (inst.type==TYPE_ONTO)){
+			pileonto(s,pos,inst.source,inst.target);
+		}
+		else if ((inst.command == CMD_PILE)&& (inst.type==TYPE_OVER)){
+			pileover(s,pos,inst.source,inst.target);
+		}
+		else if (inst.command == CMD_QUIT){
+			break;
+		}
+		else{
+			printf("unrecognized instruction!\n");
+			break;
+		}
+	}	
+	//output
+	for (i=0;i<n;i++){
+		printf("%d: %s\n",i,stack2string(s[i]));
+	}
+	/*
+	printf("position: ");
+	for (i=0;i<n;i++){
+		printf("%d ",pos[i]);
+	}
+	*/
+}

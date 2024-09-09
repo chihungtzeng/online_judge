@@ -1,0 +1,47 @@
+4 4
+A
+B
+C
+D
+A B 1
+B C 2
+B D 3
+A D 4
+A
+5 4
+A
+B
+C
+D
+E
+A B 1
+B C 2
+B D 3
+A D 4
+E
+9 14
+a
+b
+c
+d
+e
+f
+g
+h
+i
+a b 4
+a h 8
+b h 11
+b c 8
+c i 2
+h i 7
+ h g 1
+ g i 6
+g f 2
+c f 4
+c d 7
+d f 14
+d e 9
+e f 10
+i
+0 0

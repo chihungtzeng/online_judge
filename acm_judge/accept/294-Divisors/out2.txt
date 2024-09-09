@@ -1,0 +1,7 @@
+Between 1 and 1, 1 has a maximum of 1 divisors.
+Between 3 and 3, 3 has a maximum of 2 divisors.
+Between 100 and 500, 360 has a maximum of 24 divisors.
+Between 90000 and 100000, 98280 has a maximum of 128 divisors.
+Between 123456789 and 123459999, 123458580 has a maximum of 288 divisors.
+Between 1000 and 2000, 1680 has a maximum of 40 divisors.
+Between 5000 and 9000, 7560 has a maximum of 64 divisors.

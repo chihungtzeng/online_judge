@@ -1,0 +1,19 @@
+3
+A C B w
+B A B -
+C C B -
+4
+A C B w
+B A B -
+C C D w
+D A B w
+4
+A C B w
+B A B -
+C C D w
+D C B -
+4
+A C B w
+B A B -
+C C D w
+D A B -

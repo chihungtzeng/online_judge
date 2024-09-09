@@ -1,0 +1,230 @@
+Case 1:
+Impossible to divide
+Case 2:
+1
+Case 3:
+1
+Case 4:
+3
+Case 5:
+3
+Case 6:
+4
+Case 7:
+4
+Case 8:
+7
+Case 9:
+7
+Case 10:
+8
+Case 11:
+Impossible to divide
+Case 12:
+Impossible to divide
+Case 13:
+1
+Case 14:
+1
+Case 15:
+1
+Case 16:
+2
+Case 17:
+2
+Case 18:
+2
+Case 19:
+4
+Case 20:
+4
+Case 21:
+Impossible to divide
+Case 22:
+Impossible to divide
+Case 23:
+Impossible to divide
+Case 24:
+1
+Case 25:
+1
+Case 26:
+2
+Case 27:
+2
+Case 28:
+3
+Case 29:
+3
+Case 30:
+4
+Case 31:
+Impossible to divide
+Case 32:
+Impossible to divide
+Case 33:
+Impossible to divide
+Case 34:
+Impossible to divide
+Case 35:
+1
+Case 36:
+1
+Case 37:
+1
+Case 38:
+1
+Case 39:
+1
+Case 40:
+2
+Case 41:
+Impossible to divide
+Case 42:
+Impossible to divide
+Case 43:
+1
+Case 44:
+1
+Case 45:
+1
+Case 46:
+2
+Case 47:
+2
+Case 48:
+2
+Case 49:
+4
+Case 50:
+4
+Case 51:
+Impossible to divide
+Case 52:
+Impossible to divide
+Case 53:
+Impossible to divide
+Case 54:
+Impossible to divide
+Case 55:
+Impossible to divide
+Case 56:
+Impossible to divide
+Case 57:
+1
+Case 58:
+1
+Case 59:
+1
+Case 60:
+1
+Case 61:
+Impossible to divide
+Case 62:
+Impossible to divide
+Case 63:
+Impossible to divide
+Case 64:
+1
+Case 65:
+1
+Case 66:
+1
+Case 67:
+1
+Case 68:
+2
+Case 69:
+2
+Case 70:
+2
+Case 71:
+Impossible to divide
+Case 72:
+Impossible to divide
+Case 73:
+Impossible to divide
+Case 74:
+Impossible to divide
+Case 75:
+Impossible to divide
+Case 76:
+1
+Case 77:
+1
+Case 78:
+1
+Case 79:
+2
+Case 80:
+2
+Case 81:
+Impossible to divide
+Case 82:
+Impossible to divide
+Case 83:
+Impossible to divide
+Case 84:
+Impossible to divide
+Case 85:
+1
+Case 86:
+1
+Case 87:
+1
+Case 88:
+1
+Case 89:
+1
+Case 90:
+2
+Case 91:
+277
+Case 92:
+277
+Case 93:
+277
+Case 94:
+277
+Case 95:
+277
+Case 96:
+8
+Case 97:
+8
+Case 98:
+8
+Case 99:
+8
+Case 100:
+8
+Case 101:
+38
+Case 102:
+38
+Case 103:
+38
+Case 104:
+38
+Case 105:
+38
+Case 106:
+623
+Case 107:
+624
+Case 108:
+624
+Case 109:
+624
+Case 110:
+624
+Case 111:
+1
+Case 112:
+1
+Case 113:
+1
+Case 114:
+2
+Case 115:
+2

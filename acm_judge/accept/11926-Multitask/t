@@ -1,0 +1,21 @@
+80
+40
+20
+10
+8
+4
+2
+1
+sByte=1 eBytePos=2
+sByte=2 eBytePos=3
+NO CONFLICT
+00 3f ff fc 
+sByte=1 eBytePos=3
+sByte=2 eBytePos=2
+CONFLICT
+00 3f ff fc 
+sByte=125 eBytePos=249
+sByte=0 eBytePos=1
+sByte=125 eBytePos=126
+CONFLICT
+ff c0 00 00 

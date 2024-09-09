@@ -1,0 +1,392 @@
+City 0(belmont) location:(900, 900) population: 600, Maternity Service: 0
+City 1(butter) location:(200, 400) population: 700, Maternity Service: 0
+City 2(castle) location:(700, 300) population: 2500, Maternity Service: 1
+City 3(covi) location:(500, 600) population: 2800, Maternity Service: 1
+City 4(cpp) location:(2134, 3157) population: 13124, Maternity Service: 0
+City 5(foo) location:(3130, 1245) population: 1340, Maternity Service: 1
+City 6(fund) location:(500, 400) population: 1000, Maternity Service: 1
+City 7(gard) location:(700, 900) population: 5000, Maternity Service: 1
+City 8(java) location:(3114, 3134) population: 250000, Maternity Service: 1
+City 9(penam) location:(900, 600) population: 500, Maternity Service: 0
+City 10(php) location:(3333, 5874) population: 13124, Maternity Service: 0
+City 11(python) location:(2314, 3214) population: 134567, Maternity Service: 0
+City 12(shit) location:(800, 600) population: 3000, Maternity Service: 0
+City 13(snow) location:(13313, 1124) population: 55555, Maternity Service: 0
+City 14(sun) location:(13358, 2000) population: 66666, Maternity Service: 1
+City 15(taichung) location:(2133, 13214) population: 2148, Maternity Service: 0
+City 16(taipei) location:(3132, 1250) population: 200, Maternity Service: 1
+City 17(tokyo) location:(3355, 1478) population: 11111, Maternity Service: 0
+City 18(york) location:(11321, 1234) population: 12348, Maternity Service: 1
+City 19(zombie) location:(349, 315) population: 5010, Maternity Service: 1
+5 services to be close
+city 0    379473     300000    1353917     384187     120000    1887145    7503881    1355565    6255810     482179 
+city 1    356931     252388    2134589     210000     494974    2797036    9278445    2136906    7806559     120078 
+city 2         0     901387    6518207     559016    1500000    9306903   31929117    6527405   26654971     878300 
+city 3   1009554          0    7582224     560000    1009554   10193750   36215179    7591008   30350759     903085 
+city 4  41953314   39824809   28293590   42060331   35093892   12865061  148084335   28247570  123183193   44045029 
+city 5   3493759    3628636          0    3701633    3288853    2531350   13742809       7216   10975949    3929391 
+city 6    223606     200000    2762412          0     538516    3782558   12957166    2765849   10853091     173280 
+city 7   3000000    1802775   12271842    2692582          0   16445479   63528529   12285279   53131251    3411106 
+city 8 930690335  910156305  472266939  945639730  822273981          0 2576643795  471021496 2106015921  987167222 
+city 9    180277     200000    1160702     223606     180277    1682479    6268208    1162360    5220134     310171 
+city 10  80904073   78569876   60809385   80891725   73860683   36074438  141050034   60742682  121237452   82802702 
+city 11 448259462  428159798  286814558  450532084  379650498  108190529 1495109813  286296471 1240985373  471280953 
+city 12    948683     900000    7252883    1081665     948683   10294744   37907390    7262679   31620255    1600510 
+city 13 702208925  712421223  565756501  712961678  700825708  577504047   48730349  565648768  110834160  721615990 
+city 14 851434610  862257549  683715032  863802462  847038593  687098141          0  683557600  145082815  874502689 
+city 15  27909529   27320979   25798452   27747079   26628970   21754135   34081824   25788106   32429802   27970791 
+city 16    522192     542214       1077     553169     491411     376817    2050693          0    1637803     587173 
+city 17  32273025   33188073    3598900   33907868   30190672   18593643  111294563    3543572   88551736   35812262 
+city 18 131654232  133846850  101142559  134013974  131212939  104020338   26872507  101117965          0  135956664 
+city 19   1760115    1615878   14691231     868133    3417929   19782831   65719534   14708692   55162203          0 
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 6 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+***Better Ans 2230475403 **** close list:5 6 7 8 9 
+pos = 9 returns min = 2230475403
+***Better Ans 2230475403 **** close list:5 6 7 8 9 
+pos = 8 returns min = 2230475403
+***Better Ans 2230475403 **** close list:5 6 7 8 9 
+pos = 7 returns min = 2230475403
+***Better Ans 2230475403 **** close list:5 6 7 8 9 
+pos = 6 returns min = 2230475403
+***Better Ans 2230475403 **** close list:5 6 7 8 9 
+pos = 5 returns min = 2230475403
+***Better Ans 2230475403 **** close list:5 6 7 8 9 
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+***Better Ans 1537359417 **** close list:4 6 7 8 9 
+pos = 9 returns min = 1537359417
+***Better Ans 1537359417 **** close list:4 6 7 8 9 
+pos = 8 returns min = 1537359417
+***Better Ans 1537359417 **** close list:4 6 7 8 9 
+pos = 7 returns min = 1537359417
+***Better Ans 1537359417 **** close list:4 6 7 8 9 
+pos = 6 returns min = 1537359417
+***Better Ans 1537359417 **** close list:4 6 7 8 9 
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+***Better Ans 957446942 **** close list:4 5 7 8 9 
+pos = 9 returns min = 957446942
+***Better Ans 957446942 **** close list:4 5 7 8 9 
+pos = 8 returns min = 957446942
+***Better Ans 957446942 **** close list:4 5 7 8 9 
+pos = 7 returns min = 957446942
+***Better Ans 957446942 **** close list:4 5 7 8 9 
+pos = 5 returns min = 1537359417
+***Better Ans 1537359417 **** close list:4 5 6 8 9 
+pos = 4 returns min = 1537359417
+***Better Ans 1537359417 **** close list:4 5 6 8 9 
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 6 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+***Better Ans 956454300 **** close list:3 5 7 8 9 
+pos = 9 returns min = 956454300
+***Better Ans 956454300 **** close list:3 5 7 8 9 
+pos = 8 returns min = 956454300
+***Better Ans 956454300 **** close list:3 5 7 8 9 
+pos = 7 returns min = 956454300
+***Better Ans 956454300 **** close list:3 5 7 8 9 
+Find no answer Q_Q
+pos = 5 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+***Better Ans 263338314 **** close list:3 4 7 8 9 
+pos = 9 returns min = 263338314
+***Better Ans 263338314 **** close list:3 4 7 8 9 
+pos = 8 returns min = 263338314
+***Better Ans 263338314 **** close list:3 4 7 8 9 
+pos = 7 returns min = 263338314
+***Better Ans 263338314 **** close list:3 4 7 8 9 
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+pos = 3 returns min = 1537359417
+***Better Ans 1537359417 **** close list:3 4 5 8 9 
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 8 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+***Better Ans 263289125 **** close list:2 3 4 8 9 
+pos = 9 returns min = 263289125
+***Better Ans 263289125 **** close list:2 3 4 8 9 
+pos = 8 returns min = 263289125
+***Better Ans 263289125 **** close list:2 3 4 8 9 
+***Better Ans 254367640 **** close list:2 3 4 7 9 
+pos = 9 returns min = 254367640
+***Better Ans 254367640 **** close list:2 3 4 7 9 
+pos = 7 returns min = 263289125
+***Better Ans 263289125 **** close list:2 3 4 7 8 
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 3 returns min = 10000000000000000
+pos = 2 returns min = 1537359417
+***Better Ans 1537359417 **** close list:2 3 4 5 8 
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+***Better Ans 239073128 **** close list:1 3 4 7 9 
+pos = 9 returns min = 239073128
+***Better Ans 239073128 **** close list:1 3 4 7 9 
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 3 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+***Better Ans 239023939 **** close list:1 2 3 4 9 
+pos = 9 returns min = 239023939
+***Better Ans 239023939 **** close list:1 2 3 4 9 
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 3 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 2 returns min = 10000000000000000
+pos = 1 returns min = 1537359417
+***Better Ans 1537359417 **** close list:1 2 3 4 5 
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+***Better Ans 237386917 **** close list:0 3 4 7 9 
+pos = 9 returns min = 237386917
+***Better Ans 237386917 **** close list:0 3 4 7 9 
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 3 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+***Better Ans 237337728 **** close list:0 2 3 4 9 
+pos = 9 returns min = 237337728
+***Better Ans 237337728 **** close list:0 2 3 4 9 
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 3 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 2 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 7 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 3 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 9 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 4 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 3 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 2 returns min = 10000000000000000
+Find no answer Q_Q
+pos = 1 returns min = 10000000000000000
+pos = 0 returns min = 1537359417
+final cost: 237337728
+castle
+foo
+fund
+gard
+zombie
+

@@ -1,0 +1,4 @@
+BBCCDD
+a a a
+C
+AAABBBCCC

@@ -1,0 +1,5 @@
+There are 543427145501 ways to produce 30000 cents change.
+There are 543065523200 ways to produce 29999 cents change.
+There are 543065523200 ways to produce 29998 cents change.
+There are 15723159452 ways to produce 12345 cents change.
+There are 242551012 ways to produce 4321 cents change.

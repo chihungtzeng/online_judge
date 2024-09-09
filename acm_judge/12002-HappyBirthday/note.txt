@@ -1,0 +1,3 @@
+greedy method doesn't work.
+we need to calculate LIS and LDS
+

@@ -1,0 +1,71 @@
+import java.math.*;
+import java.util.*;
+import java.io.*;
+
+public class Main{
+    final static BigInteger MOD = new BigInteger("100000000");
+    public static void solve(long n){
+        long m, ell, ellprime, r, q;
+        long firstEleInLastSeq;
+        long tmp;
+        int i;
+        
+        BigInteger ans, term[];
+        term = new BigInteger[3];
+        
+        m = (n % 2 == 1)? n : n - 1;
+        q = (long) Math.sqrt(0.0 + m);
+        ell = q - 1;
+        ellprime = (ell % 2 == 1)? ell: ell - 1;
+        firstEleInLastSeq = q * q;
+        if (firstEleInLastSeq % 2 == 0){
+            firstEleInLastSeq++;
+        }
+        r = ((m - firstEleInLastSeq) >> 1) + 1;
+        /*
+        System.out.println("m="+m+" q="+q+" ell="+ell+ " ellprime'="+ellprime + " r=" + r + " firstEleInLastSeq=" + firstEleInLastSeq);
+        */
+        
+        term[0] = new BigInteger(ell+"");
+        
+        tmp = ell + 1;        
+        term[0] = term[0].multiply(new BigInteger(""+tmp));
+        tmp = (ell << 1)+ 1;
+        term[0] = term[0].multiply(new BigInteger(""+tmp));
+        term[0] = term[0].divide(new BigInteger("6"));
+        
+        
+        tmp = ellprime + 1;
+        term[1] = new BigInteger("" + tmp);
+        tmp = ((ellprime - 1) >> 1) + 1;
+        term[1] = term[1].multiply(new BigInteger(""+ tmp));
+        term[1] = term[1].divide(new BigInteger("2"));
+        
+        
+        term[2] = new BigInteger(r+"");
+        term[2] = term[2].multiply(new BigInteger(q+""));
+        
+        /*
+        for(i=0; i<3; i++){
+            System.out.println("term "+i+" : "+term[i].toString());
+        }
+        */
+        ans = term[1].add(term[2]);
+        ans = ans.add(term[0]);
+        ans = ans.mod(MOD);
+        System.out.println(ans.toString());
+    }
+    public static void main(String args[]){
+        Scanner stdin = new Scanner(System.in);
+        long n;
+        while(true){
+            n = stdin.nextLong();
+            if(n == 0){
+                break;
+            }
+            else {
+                solve(n);
+            }
+        }
+    }
+}

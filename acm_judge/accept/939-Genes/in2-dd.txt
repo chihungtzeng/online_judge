@@ -1,0 +1,5 @@
+4
+John dominant
+Mary dominant
+John Susan
+Mary Susan

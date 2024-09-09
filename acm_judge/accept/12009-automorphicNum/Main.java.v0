@@ -1,0 +1,76 @@
+import java.math.*;
+import java.util.*;
+import java.io.*;
+
+public class Main {
+	static BigInteger pow10[];
+	static BigInteger pow5[], pow2[];
+	static BigInteger ans[];
+	static int nFound;
+ 
+	static boolean isValidNumber(BigInteger t){
+		int len = t.toString().length();
+		BigInteger check = t.pow(2).mod(pow10[len]);
+		if(t.compareTo(check) == 0) {
+			/*System.out.println(t.toString() + " is auto morphic");*/
+			return true;
+		}
+		else {
+			/*System.out.println(t.toString() + " is NOT auto morphic");*/
+			return false;
+		}
+	}
+	
+	static void generateAutoMorphicNum(int k){
+		int i;
+		BigInteger aNum[] = new BigInteger[2];
+		/*Type 1: n mod 5^k = 0	*/
+		aNum[0] = pow5[k];
+		while(aNum[0].compareTo(pow10[k]) < 0){
+			aNum[1] = pow10[k].subtract(aNum[0]);
+			if(isValidNumber(aNum[0])){
+				System.out.println(aNum[0].toString());
+			}
+			if(isValidNumber(aNum[1])){
+				System.out.println(aNum[1].toString());
+			}
+			aNum[0] = aNum[0].add(pow5[k]);
+		}
+		/*Type 1: n mod 5^k = 1	*/		
+		aNum[0] = pow5[k].add(BigInteger.ONE);
+		while(aNum[0].compareTo(pow10[k]) < 0){
+			aNum[1] = pow10[k].subtract(aNum[0]);
+			if(isValidNumber(aNum[0])){
+				System.out.println(aNum[0].toString());
+			}
+			if(isValidNumber(aNum[1])){
+				System.out.println(aNum[1].toString());
+			}
+			aNum[0] = aNum[0].add(pow5[k]);
+		}
+	}	
+	
+	public static void main(String args[]){
+		int i;
+		pow5 = new BigInteger[1000];
+		pow2 = new BigInteger[1000];
+		pow10 = new BigInteger[1000];
+		ans = new BigInteger[2000];
+		for(i=2; i<=500; i++){
+			pow10[i] = new BigInteger("10");
+			pow10[i] = pow10[i].pow(i);
+			pow5[i] = new BigInteger("5");
+			pow5[i] = pow5[i].pow(i);
+			pow2[i] = new BigInteger("2");
+			pow2[i] = pow2[i].pow(i);
+		}
+		ans[0] = new BigInteger("25");
+		ans[0] = new BigInteger("76");
+		nFound = 2;
+		
+		for(i=3; i<=500; i++){
+			generateAutoMorphicNum(i);
+		}
+		
+	}
+}

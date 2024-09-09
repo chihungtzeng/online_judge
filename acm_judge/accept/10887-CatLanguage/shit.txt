@@ -1,0 +1,60 @@
+5
+20 20
+aaaaaaaaaa
+aaaaaaaaa
+aaaaaaaa
+aaaaaaa
+aaaaaa
+aaaaa
+aaaa
+aaa
+aa
+a
+baaaaaaaaa
+baaaaaaaa
+baaaaaaa
+baaaaaa
+baaaaa
+baaaa
+baaa
+baa
+ba
+b
+aaaaaaaaaa
+aaaaaaaaa
+aaaaaaaa
+aaaaaaa
+aaaaaa
+aaaaa
+aaaa
+aaa
+aa
+a
+aaaaaaaaab
+aaaaaaaab
+aaaaaaab
+aaaaaab
+aaaaab
+aaaab
+aaab
+aab
+ab
+b
+2 2
+gas
+
+gadf
+
+1 1
+
+
+1 1
+a
+a
+5 1
+gfegtwg
+wgtwgtrweg
+trwgtrwg
+trwgrwg
+trwgtgg
+trwgtgg

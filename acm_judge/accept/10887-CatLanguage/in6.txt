@@ -1,0 +1,16 @@
+1
+7 7
+
+a
+aa
+aaa
+aaaa
+aaaaa
+aaaaaa
+
+a
+aa
+aaa
+aaaa
+aaaaa
+aaaaaa

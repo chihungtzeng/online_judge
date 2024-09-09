@@ -1,0 +1,7 @@
+Case 1: 4
+Case 2: 4
+Case 3: 5
+Case 4: 159
+Case 5: 4472138
+Case 6: 14142138
+Case 7: 44721362

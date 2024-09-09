@@ -1,0 +1,4 @@
+Case 1:
+Closest sum to 0 is 5.
+Closest sum to 5 is 5.
+Closest sum to 100000 is 15.

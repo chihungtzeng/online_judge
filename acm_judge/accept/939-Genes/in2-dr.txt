@@ -1,0 +1,5 @@
+4
+John dominant
+Mary recessive
+John Susan
+Mary Susan

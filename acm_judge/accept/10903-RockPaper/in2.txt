@@ -1,0 +1,7 @@
+2 2
+1 rock 2 paper
+2 rock 1 paper
+3 2
+1 rock 2 paper
+2 rock 1 paper
+0

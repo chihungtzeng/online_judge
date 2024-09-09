@@ -1,0 +1,4 @@
+Case #1: 13
+Case #2: 13
+Case #3: 11
+Case #4: 8

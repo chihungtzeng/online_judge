@@ -1,0 +1,93 @@
+#include <stdio.h>
+char n, num, sol[50];
+
+char gcd( char a, char b ){
+    char temp;
+    while ( b > 0 )
+    {
+        temp = a % b;
+        a = b;
+        b = temp;
+    }
+    return a;
+}
+
+
+
+void back( char x, char last, char num )
+
+{
+
+    char i;
+
+    if ( x > 1 )
+
+    {
+
+        for ( i = 0; i < x - 1; ++i )
+
+        {
+
+            if ( gcd( sol[ i ], sol[ x - 1 ] ) != 1 )
+
+                return;
+
+        }
+
+
+
+    }
+
+
+
+    if ( x == n )
+
+    {
+
+        if ( num )
+
+            return;
+
+        printf( "%hhd", sol[ 0 ] );
+
+        for ( i = 1; i < n; ++i )
+
+            printf( " %hhd", sol[ i ] );
+
+        putchar( '\n' );
+
+        return;
+
+    }
+
+
+
+    for ( i = last; i <= num; ++i )
+
+    {
+
+        sol[ x ] = i;
+
+        back( x + 1, i, num - i );
+
+    }
+
+}
+
+int main(){
+    char t, test = 0;
+    scanf("%hhd", &t );
+    while ( t-- )
+    {
+        scanf( "%hhd %hhd", &num, &n );
+
+
+
+        printf( "Case %hhd:\n", ++test );
+
+        back( 0, 1, num );
+
+    }
+    return 0;
+
+}

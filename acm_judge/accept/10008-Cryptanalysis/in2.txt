@@ -1,0 +1,13 @@
+12
+yich liny Uf Uutput cUntiinK i Kingly uppyrciKy lyttyr, x
+fUllUwyd by i Kingly Kpicy, thyn fUllUwyd by i pUKitivy dycimil intygyr.
+Thy intygyr indicityK hUw miny timyK thy cUrryKpUnding lyttyr ippyirK in thy input tyxt.
+Uppyr ind lUwyr ciKy lyttyrK in thy input iry tU by cUnKidyryd thy Kimy.
+NU Uthyr chirictyrK muKt by cUuntyd. q
+Thy Uutput muKt by KUrtyd in dyKcynding cUunt Urdyr; thit iK,
+thy mUKt fryquynt lyttyr iK Un thy firKt Uutput liny,
+ind thy liKt liny Uf Uutput indicityK thy lyiKt fryquynt lyttyr. vVvV
+If twU lyttyrK hivy thy Kimy fryquyncy,
+thyn thy lyttyr which cUmyK firKt in thy ilphibyt muKt ippyir firKt in thy Uutput.
+If i lyttyr dUyK nUt ippyir in thy tyxt,
+xXthyn thit lyttyr muKt nUt ippyir in thy Uutput. xQQ 

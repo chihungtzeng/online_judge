@@ -1,0 +1,22 @@
+1
+20
+dal opb 8 2
+rez dal 2 8
+bew beq 5 8
+myl beq 6 4
+mjl dcs 4 5
+dcs beq 8 0
+rez dal 1 9
+rez mjl 1 7
+dcs opb 0 2
+dal opb 3 7
+dcs beq 3 6
+wso sxf 9 7
+bew wso 1 9
+dal sxf 8 0
+wso bew 5 6
+myl beq 8 3
+beq mjl 0 1
+rez myl 0 7
+sxf rez 7 9
+mjl rez 8 1

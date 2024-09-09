@@ -1,0 +1,15 @@
+2
+
+G
+AB
+CE
+DB
+EC
+FF
+
+E
+AB
+CE
+DB
+EC
+

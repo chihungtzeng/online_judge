@@ -1,0 +1,10 @@
+1 dal
+2 mjl
+2 myl
+4 dcs
+5 opb
+6 beq
+7 wso
+8 bew
+8 rez
+10 sxf

@@ -1,0 +1,34 @@
+20
+xxxx 280 500 600
+fund 100 500 400
+penam 50 900 600
+castle 250 700 300
+belmont 60 900 900
+butter 70 200 400
+gard 500 700 900
+shit 300 800 600
+zombie 501 349 315
+foo 134 3130 1245
+taipei 20 3132 1250
+taichung 214 2133 13214
+java 2500 3114 3134
+cpp 1312 2134 3157
+python 1367 2314 3214
+php 131 3333 5874
+tokyo 1111 3355 1478
+york 1248 11321 1234
+snow 5555 13313 1124
+sun 6666 13358 2000
+
+10
+foo
+taipei
+xxxx
+gard
+castle
+fund
+sun
+york
+java
+zombie
+4
